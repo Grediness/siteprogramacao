@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.imagens{
+    display: flex;
+    padding-top: 40px;
+    gap: 60px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.centro{
+    gap: 60px;
+}

@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-itens{
+    list-style: none;
+    display: flex;
+    padding: 10px 15px;
+    gap: 10px;
+    
+    
+}
+.nav-itens>a>li{
+    padding-right: 30px;
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    font-family: "Noto Sans JP", serif;
+    background-color:cadetblue;
+    align-items: center;
+    border: 2px  solid #080808;
+    
+}
+
+.logo{
+    font-weight: 800;
+    font-size: 28px;
+    margin: 0px;
+}
+
+.logo:hover{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.nav-itens>a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+.itens{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-left: 30px;
+}
+
+.itens:hover{
+    background-color: rgb(73, 177, 113);
+
+}
+
+main{
+    font-family:"Noto Sans JP", serif ;
+}
+
+
+.titulo{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.continuo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
