@@ -2,16 +2,79 @@
     padding: 0;
     box-sizing: border-box;
     margin: 0;
+    background-color: black;
+    color: white;
+}
+
+.voltar{
+    display: grid;
+    background-color: rgb(247, 250, 250);
+    color: rgb(12, 8, 8);
+    width: 60px;
+    height: 50px;
+    text-decoration: none;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+
+
+}
+
+h2{
+    text-align: center;
 }
 
 .imagens{
     display: flex;
-    padding-top: 40px;
-    gap: 60px;
-    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 300px;
+
+
 }
 
 .centro{
     gap: 60px;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 3s;
+    transform: translateX(-100%);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+.show{
+    opacity: 1;
+    transition: all 3s;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.imagens :nth-child(2){
+    transition-delay: 400ms;
+}
+
+.imagens :nth-child(3){
+    transition-delay: 800ms;
+}
+
+.imagens :nth-child(4){
+    transition-delay: 1200ms;
+}
+
+.imagens :nth-child(5){
+    transition-delay: 1600ms;
+}
+
+
+
+p{
+    font-size: 30px;
 }

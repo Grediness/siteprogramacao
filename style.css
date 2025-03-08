@@ -14,16 +14,17 @@
 }
 .nav-itens>a>li{
     padding-right: 30px;
-    
+    color: aliceblue;
 }
 
 nav{
     display: flex;
     justify-content: space-around;
     font-family: "Noto Sans JP", serif;
-    background-color:cadetblue;
+    color: aliceblue;
+    background-color:rgb(8, 10, 10);
     align-items: center;
-    border: 2px  solid #080808;
+    border: 2px  solid #f3eeee;
     
 }
 
@@ -45,7 +46,7 @@ nav{
 }
 
 .itens{
-    border: 1px solid black;
+    border: 1px solid rgb(240, 239, 239);
     border-radius: 10px;
     padding-left: 30px;
 }
@@ -56,25 +57,47 @@ nav{
 }
 
 main{
-    font-family:"Noto Sans JP", serif ;
+    color: #f3eeee;
+    background-color: black;
+    padding-top: 100px;
 }
 
+h1{
+    text-align: center;
+}
+section{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
 
-.titulo{
-    padding-top: 10px;
+.hidden{
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 3s;
+    transform: translateX(-100%);
     display: flex;
     flex-direction: column;
+    gap: 5px;
     align-items: center;
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
+.show{
+    opacity: 1;
+    transition: all 3s;
+    filter: blur(0);
+    transform: translateX(0);
+}
+h2{
+    font-size: 50px;
+
 }
 
-.continuo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+h3{
+    font-size: 30px;
+    width: 490px;
+    border: 2px solid white
+    
 }
+

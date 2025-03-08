@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <a href="../linguagens/index.html"><div class="voltar">Voltar</div></a>
     <header>
-        
-        <img src="python.jpg" alt="" width="150">
+        <img src="Python.svg.png" alt="" width="200">
         <h1>Python</h1>
         <h3>Python é uma linguagem de programação de alto nível, conhecida por sua sintaxe clara e concisa, 
         o que a torna uma excelente opção tanto para iniciantes quanto para programadores experientes. 
@@ -17,9 +18,250 @@
         <h3>
     </header>
     <main>
-        <h2>SUMÁRIO</h2>
-
-    </main>
+        <section class="sumario">
+            <h2>SUMÁRIO</h2>
+        </section>
+            
+            <div class="titulo">
+                <h4>Capitulo 1:Primeiros programas
+                </h4>
+            </div>
+                <div class="centro">
+                    <h3>Antes de começar a explicação há tópicos importantes sobre a linguagem que será estudada:</h3>
+                    <h3>1)letras maiúsculas e minúsculas são completamente diferentes no código sendo assim, print e Print. </h3>
+                    <h3> 2)as aspas (“) são muito importantes e caso tenha que usá-las lembre-se de fechá-las. </h3>
+                    <h3>3)parênteses () são ainda, mas importantes do que as aspas então prestem mais atenção onde ele começa e termina.</h3>
+                </div>
+                <hr>
+                <p class="titulo"><strong>FUNÇÃO PRINT</strong></p>
+                <p>Essa função é usada quando quer mostrar algo na tela. Acredito que quem está lendo isso já fez ou já viu 
+                    alguém fazendo um pix, se você reparar bem independentemente do valor do pix irá aparecer uma mensagem de: 
+                    *TRANSFERÊNCIA APROVADA*, isso quer dizer quem a pessoa 
+                    que desenvolveu esse código em algum momento colocou o código:</p>
+                <p class="meio">print (“*TRANSFERENCIA APROVADA”)*</p>
+                <p>Caso ainda não tenha entendido um outro exemplo seria quando você está jogado algum jogo e quando consegui passar de fase 
+                    aparece a frase: *NÍVEL CONCLUIDO* (ou algo similar). isso quer dizer quem a pessoa que desenvolveu esse código em algum momento colocou o código:</p>
+                <p>A função print também serve para mostrar o resultado de alguma conta matemática, sua sintaxe ficaria assim</p>
+                <p class="meio">print (2+3)</p>
+                <p class="meio">Por ser números não há a necessidade de colocar as aspas</p>
+                <p class="meio">OBS:>>>2+3</p>
+                <p class="meio">Esse símbolo significa que há um código antes do 2+3, que nesse caso seria o código: print (2+3).Caso queria fazer 
+                    outros tipos de conta você irá usar:</p>
+                    <section class="tabela">
+                    <table border="1">
+                        <tr>
+                            <td><strong>OPERADOR</strong></td>
+                            <td><strong>OPERAÇÃO</strong></td>
+                        </tr>
+                        <tr>
+                            <td>+</td>
+                            <td>Adição</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>Subtração</td>
+                        </tr>
+                        <tr>
+                            <td>*</td>
+                            <td>Multiplicação</td>
+                        </tr>
+                        <tr>
+                            <td>/</td>
+                            <td>Divisão(com resultados fracionário)</td>
+                        </tr>
+                        <tr>
+                            <td>//</td>
+                            <td>Divisão(com resultados inteiros)</td>
+                        </tr>
+                        <tr>
+                            <td>%</td>
+                            <td>Módulo ou resto</td>
+                        </tr>
+                        <tr>
+                            <td>**</td>
+                            <td>Exponenciação ou potenciação</td>
+                        </tr>
+                    </table>
+                </section>
+                <p>Esses tipos de operadores sempre serão feitos uma comparação, caso a comparação seja verdadeira o 
+                    resultado será True e caso o resultado for falso será False. Quando foi fazer uma comparação sempre 
+                    vai ser feito uma pergunta.
+                </p>
+                <div class="capitulos">
+                    <hr>
+                    <div class="titulo">
+                        <h4>Variaveis e entrada de dados</h4>
+                    </div>
+                </div>
+                    <p class="meio">antes de aprender quais sao os tipos de variaveis e como elas se comportam antes veja os tipos de variaveis que sao aceitas</p>
+                    <section class="tabela">
+                        <table border="1">
+                            <tr>
+                                <td><strong>NOME</strong></td>
+                                <td><strong>VÁLIDO</strong></td>
+                                <td><strong>COMENTÁRIOS</strong></td>
+                            </tr>
+                            <tr>
+                                <td>a1</td>
+                                <td>Sim</td>
+                                <td>Embora tenha número,o nome inicia com letra</td>
+                            </tr>
+                            <tr>
+                                <td>batata</td>
+                                <td>Sim</td>
+                                <td>Nome formado por letras</td>
+                            </tr>
+                            <tr>
+                                <td>salário_médio</td>
+                                <td>Sim</td>
+                                <td>O simbolo "_" é permitido e facilita a leitura de nomes grandes.Acentos são aceitos sem problema</td>
+                            </tr>
+                            <tr>
+                                <td>salario medio</td>
+                                <td>Não</td>
+                                <td>Nomes de variaveis não podem conter espaços em branco</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Sim</td>
+                                <td>Python aceita letras de varios alfabetos,como grgo,hebreu,chines</td>
+                            </tr>
+                            <tr>
+                                <td>_b</td>
+                                <td>Sim</td>
+                                <td>O underline é aceito em nomes de variaveis,mesmo no incio</td>
+                            </tr>
+                            <tr>
+                                <td>1a</td>
+                                <td>Não</td>
+                                <td>Nomes de variaveis não podem começar com números</td>
+                            </tr>
+                        </table>
+                    </section>
+                    <hr>
+                    <p class="titulo"><strong>VARIAVEL NUMERICA</strong></p>
+                    <p class="meio">As mais conhecidas são as variáveis de números inteiros e as variáveis de números ponto flutuante</p>
+                    <p class="meio">Números inteiros:1,0,-5,550, -47. (são números sem decimal) </p>
+                    <p class="meio">Números ponto flutuante:1.0, 5.478, 10.478, 30000.4(são números decimais)</p>
+                    <div class="canto">
+                        <p class="meio">Em python o ponto(.) é usado para separar a parte inteira da parte decimal ao invés de usar a virgula como é visto no nosso dia a dia. </p>
+                        <p class="meio">OBS: existem outros tipos de variáveis numéricas como: números complexos, modulo cmath, ponto fixo, frações. </p>
+                    </div>
+                    <hr>
+                    <p class="titulo"><strong>VARIAVEIS LOGICAS/BOOLENAS</strong></p>
+                    <p class="meio">Esses tipos de variáveis após serem usadas irão retornar um valor True ou False. Para usar essas variáveis é necessário usar algo chamado de operadores lógicos.</p>
+                    <section class="tabela">
+                        <table border="1">
+                            <tr>
+                                <td>OPERADOR</td>
+                                <td>OPERAÇÃO</td>
+                                <td>SIMBOLO MATEMATICO</td>
+                            </tr>
+                            <tr>
+                                <td>==</td>
+                                <td>Igualdade</td>
+                                <td>=</td>
+                            </tr>
+                            <tr>
+                                <td>></td>
+                                <td>Maior que</td>
+                                <td>></td>
+                            </tr>
+                            <tr>
+                                <td><</td>
+                                <td>Menor que</td>
+                                <td><</td>
+                            </tr>
+                            <tr>
+                                <td>!=</td>
+                                <td>Diferente</td>
+                                <td>≠</td>
+                            </tr>
+                            <tr>
+                                <td>>=</td>
+                                <td>Maior ou igual</td>
+                                <td>≥</td>
+                            </tr>
+                            <tr>
+                                <td><=</td>
+                                <td>Menor ou Igual</td>
+                                <td>≤</td>
+                            </tr>
+                        </table>
+                    </section>
+                    <p>Esses tipos de operadores sempre serão feitos uma comparação, caso a comparação seja verdadeira o resultado 
+                        será True e caso o resultado for falso será False. Quando foi fazer uma comparação sempre vai ser feito uma pergunta</p>
+                        <hr>
+                        <section class="tabela">
+                            <table border="1">
+                                <tr>
+                                    <td>OPERADOR PYTHON</td>
+                                    <td>SIGNIFICADO</td>
+                                </tr>
+                                <tr>
+                                    <td>NOT</td>
+                                    <td>NÃO</td>
+                                </tr>
+                                <tr>
+                                    <td>AND</td>
+                                    <td>E</td>
+                                </tr>
+                                <tr>
+                                    <td>OR</td>
+                                    <td>OU</td>
+                                </tr>
+                            </table>
+                        </section>
+                    <p class="meio">NOT</p>
+                    <p class="meio">Esse operador é um operador de negação ou de inversão, isso porque um valor verdadeiro (True) se torna falso e vice-versa</p>
+                    <p class="meio">AND</p>
+                    <p class="meio">O operador and só irá retornar o valor (True) caso as duas opções sejam verdadeiras, caso o contrário será considerado (False).</p>
+                    <p class="meio">OR</p>
+                    <p class="meio">E o operador or é bem parecido com o operador and só que a sua única diferença é que para ele retornar o valor True só é preciso que uma 
+                        das opções seja considerada verdadeira.</p>
+                        <hr>
+                        <p class="meio">STRING</p>
+                        <p>Esse tipo de variação inclui qualquer tipo de caracter(letras,números,sinais de pontuação, etc...). Exemplo:abacaxi. Uma string que 
+                            apresente mais de um caracter é chamado de cadeia de caracter, para uma melhor explicação uma cadeia de caracteres seria como cada 
+                            letra de uma palavra(nesse caso)estivesse ocupando um bloco de espaço. Quando você for usar uma variável desse tipo é OBRIGATÓRIO usar 
+                            aspas tanto no início quanto no final da string. Caso a frase tenha espaços,esse espaço também contará com um caracter.
+                            caso você queira saber a quantidade total de caracteres de uma determinada frase ou quer saber em qual posição está um caracter 
+                            em específico, você irá usar uma função chamada *len()*. Essa função retornar uma valor inteiro que representa a quantidade de caracter.</p>
+                            <div class="meio">
+                                <p>CÓDIGO</p>
+                                <p>print(len("A"))</p>
+                                <p>TERMINAL:1</p>
+                                <p>CÓDIGO</p>
+                                <p>print(len(O rato roeu a roupa ))</p>
+                                <p>Terminal:19</p>
+                            </div>
+                            <p>Como foi dito anteriormente outra possível função de uma string é poder acessar um caracter em específico. Para isso é necessário usar 
+                                [] e dentro desses colchetes como o número ou como chamamos o índice. A contagem do índice começa no zero. Caso você coloque:</p>
+                            <p class="meio"> print([-1])</p>
+                            <p class="meio">Irá ser mostrado o último caracter.</p>
+                            <div class="meio">
+                                <p > OPERAÇÃO COM STRING</p>
+                                <p>Por mais que sejam caracteres é possível fazer algumas "operações " sendo elas:</p>
+                                <p>FATIAMENTO:usar apenas uma parte da string. </p>
+                                <p>CONCATENAÇÃO:poder juntar as string</p>
+                                <p>COMPOSIÇÃO:poder colocar strings dentro de strings(no caso nesse OPERAÇÕES COM STRING está apenas a composição mais recentes )</p>
+                            </div>
+                    <div class="titulo">
+                        <h4>Codiçoes</h4>
+                    </div>
+                    <p></p>
+                    <div class="titulo">
+                        <h4>Repeticoes</h4>
+                    </div>
+                    <p></p>
+                    <div class="titulo">
+                        <h4>Listas,tuplas e dicionarios</h4>
+                    </div>
+                    <p></p>
+                <h4></h4>
+            </div>
+        </main>
     <footer></footer>
+    
 </body>
 </html>
